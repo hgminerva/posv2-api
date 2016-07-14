@@ -10,7 +10,7 @@ namespace posv2_api.Entity
     {
         public Int32 Id { get; set; }
         public String DocRef { get; set; }
-        public String DocDate { get; set; }
+        public DateTime? DocDate { get; set; }
         public String ItemCode { get; set; }
         public Int32 ItemId { get; set; }
         public Decimal Price { get; set; }

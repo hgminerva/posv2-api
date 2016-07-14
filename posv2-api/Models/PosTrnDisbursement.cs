@@ -9,7 +9,7 @@ namespace posv2_api.Models
     {
         public Int32 Id { get; set; }
         public Int32 PeriodId { get; set; }
-        public String DisbursementDate { get; set; }
+        public DateTime? DisbursementDate { get; set; }
         public String DisbursementNumber { get; set; }
         public String DisbursementType { get; set; }
         public Int32 AccountId { get; set; }
@@ -24,9 +24,9 @@ namespace posv2_api.Models
         public Int32 ApprovedBy { get; set; }
         public Boolean IsLocked { get; set; }
         public Int32 EntryUserId { get; set; }
-        public DateTime EntryDateTime { get; set; }
+        public DateTime? EntryDateTime { get; set; }
         public Int32 UpdateUserId { get; set; }
-        public DateTime UpdateDateTime { get; set; }
+        public DateTime? UpdateDateTime { get; set; }
         public Decimal? Amount1000 { get; set; }
         public Decimal? Amount500 { get; set; }
         public Decimal? Amount200 { get; set; }

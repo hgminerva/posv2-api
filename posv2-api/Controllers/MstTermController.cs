@@ -67,7 +67,7 @@ namespace posv2_api.Controllers
             }
         }
 
-        [HttpPost, Route("delete")]
+        [HttpDelete, Route("delete")]
         public String deleteTerm(Entity.MstTerm term)
         {
             try

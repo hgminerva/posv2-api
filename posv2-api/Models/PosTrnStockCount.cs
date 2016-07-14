@@ -9,7 +9,7 @@ namespace posv2_api.Models
     {
         public Int32 Id { get; set; }
         public Int32 PeriodId { get; set; }
-        public String StockCountDate { get; set; }
+        public DateTime? StockCountDate { get; set; }
         public String StockCountNumber { get; set; }
         public String Remarks { get; set; }
         public Int32 PreparedBy { get; set; }
@@ -17,9 +17,9 @@ namespace posv2_api.Models
         public Int32 ApprovedBy { get; set; }
         public Boolean IsLocked { get; set; }
         public Int32 EntryUserId { get; set; }
-        public String EntryDateTime { get; set; }
+        public DateTime? EntryDateTime { get; set; }
         public Int32 UpdateUserId { get; set; }
-        public String UpdateDateTime { get; set; }
+        public DateTime? UpdateDateTime { get; set; }
     
     }
 }

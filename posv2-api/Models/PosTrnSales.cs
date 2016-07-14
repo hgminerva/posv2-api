@@ -9,7 +9,7 @@ namespace posv2_api.Models
     {
         public Int32 Id { get; set; }
         public Int32 PeriodId { get; set; }
-        public String SalesDate { get; set; }
+        public DateTime? SalesDate { get; set; }
         public String SalesNumber { get; set; }
         public String ManualInvoiceNumber { get; set; }
         public Decimal Amount { get; set; }
@@ -34,9 +34,9 @@ namespace posv2_api.Models
         public Decimal DebitAmount { get; set; }
         public Decimal BalanceAmount { get; set; }
         public Int32 EntryUserId { get; set; }
-        public String EntryDateTime { get; set; }
+        public DateTime? EntryDateTime { get; set; }
         public Int32 UpdateUserId { get; set; }
-        public String UpdateDateTime { get; set; }
+        public DateTime? UpdateDateTime { get; set; }
         public Int32? Pax { get; set; }
 
     }

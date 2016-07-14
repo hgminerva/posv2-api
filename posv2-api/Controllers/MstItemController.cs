@@ -123,7 +123,7 @@ namespace posv2_api.Controllers
             }
         }
 
-        [HttpPost, Route("delete")]
+        [HttpDelete, Route("delete")]
         public String deleteItem(Entity.MstItem item)
         {
             try

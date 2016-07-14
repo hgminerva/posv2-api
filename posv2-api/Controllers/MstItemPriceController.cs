@@ -72,7 +72,7 @@ namespace posv2_api.Controllers
             }
         }
 
-        [HttpPost, Route("delete")]
+        [HttpDelete, Route("delete")]
         public String deleteItemPrice(Entity.MstItemPrice itemPrice)
         {
             try

@@ -71,7 +71,7 @@ namespace posv2_api.Controllers
             }
         }
 
-        [HttpPost, Route("delete")]
+        [HttpDelete, Route("delete")]
         public String deleteTax(Entity.MstTax tax)
         {
             try

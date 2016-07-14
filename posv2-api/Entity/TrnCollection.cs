@@ -9,7 +9,7 @@ namespace posv2_api.Entity
     {
         public Int32 Id { get; set; }
         public Int32 PeriodId { get; set; }
-        public String CollectionDate { get; set; }
+        public DateTime? CollectionDate { get; set; }
         public String CollectionNumber { get; set; }
         public Int32 TerminalId { get; set; }
         public String ManualORNumber { get; set; }
@@ -26,9 +26,9 @@ namespace posv2_api.Entity
         public Boolean IsCancelled { get; set; }
         public Boolean IsLocked { get; set; }
         public Int32 EntryUserId { get; set; }
-        public DateTime EntryDateTime { get; set; }
+        public DateTime? EntryDateTime { get; set; }
         public Int32 UpdateUserId { get; set; }
-        public DateTime UpdateDateTime { get; set; }
+        public DateTime? UpdateDateTime { get; set; }
 
     }
 }

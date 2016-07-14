@@ -14,7 +14,7 @@ namespace posv2_api.Models
         public Decimal Quantity { get; set; }
         public Decimal Cost { get; set; }
         public Decimal Amount { get; set; }
-        public String ExpiryDate { get; set; }
+        public DateTime? ExpiryDate { get; set; }
         public String LotNumber { get; set; }
         public Int32 AssetAccountId { get; set; }
     }

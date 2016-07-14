@@ -77,7 +77,7 @@ namespace posv2_api.Controllers
             }
         }
 
-        [HttpPost, Route("delete")]
+        [HttpDelete, Route("delete")]
         public String deleteStockOutLine(Entity.TrnStockOutLine stockOutLine)
         {
             try

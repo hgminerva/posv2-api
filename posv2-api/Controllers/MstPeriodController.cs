@@ -65,7 +65,7 @@ namespace posv2_api.Controllers
             }
         }
 
-        [HttpPost, Route("delete")]
+        [HttpDelete, Route("delete")]
         public String deletePeriod(Entity.MstPeriod period)
         {
             try

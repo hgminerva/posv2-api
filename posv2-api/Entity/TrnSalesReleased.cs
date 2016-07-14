@@ -14,7 +14,7 @@ namespace posv2_api.Entity
         public Int32 ItemId { get; set; }
         public Decimal Quantity { get; set; }
         public Int32 EntryUserId { get; set; }
-        public String EntryDateTime { get; set; }
+        public DateTime? EntryDateTime { get; set; }
 
     }
 }

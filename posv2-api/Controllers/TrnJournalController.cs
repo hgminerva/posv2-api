@@ -85,7 +85,7 @@ namespace posv2_api.Controllers
             }
         }
 
-        [HttpPost, Route("remove")]
+        [HttpDelete, Route("remove")]
         public String deleteJournal(Entity.TrnJournal journal)
         {
             try

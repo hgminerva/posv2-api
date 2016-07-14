@@ -66,7 +66,7 @@ namespace posv2_api.Controllers
             }
         }
 
-        [HttpPost, Route("delete")]
+        [HttpDelete, Route("delete")]
         public String deletePayType(Entity.MstPayType payType)
         {
             try
