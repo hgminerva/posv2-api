@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace posv2_api.Controllers
 {
-    [RoutePrefix("api/itemGroup")]
+    [RoutePrefix("api/itemGroupItem")]
     public class MstItemGroupItemController : ApiController
     {
         private Entity.PosDbContext db = new Entity.PosDbContext();

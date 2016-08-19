@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace posv2_api.Controllers
 {
-    [RoutePrefix("api/itemInventorie")]
+    [RoutePrefix("api/itemInventory")]
     public class MstItemInventoryController : ApiController
     {
         private Entity.PosDbContext db = new Entity.PosDbContext();
