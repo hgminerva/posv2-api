@@ -15,8 +15,9 @@ namespace posv2_api.Entity
         public Int32 SupplierId { get; set; }
         public String Remarks { get; set; }
         public Boolean IsReturn { get; set; }
-        public Int32 CollectionId { get; set; }
-        public Int32 PurchaseOrderId { get; set; }
+        public Int32? CollectionId { get; set; }
+        public Int32? PurchaseOrderId { get; set; }
+        public Int32? SalesId { get; set; }
         public Int32 PreparedBy { get; set; }
         public Int32 CheckedBy { get; set; }
         public Int32 ApprovedBy { get; set; }

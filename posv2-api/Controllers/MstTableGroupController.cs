@@ -7,12 +7,12 @@ using System.Web.Http;
 
 namespace posv2_api.Controllers
 {
-    [Authorize]
+    [RoutePrefix("api/tableGroup")]
     public class MstTableGroupController : ApiController
     {
         private Entity.PosDbContext db = new Entity.PosDbContext();
 
-        // GET api/MstTableGroup
+        [HttpGet, Route("list")]
         public List<Models.PosMstTableGroup> Get()
         {
             var tableGroups = from d in db.MstTableGroups

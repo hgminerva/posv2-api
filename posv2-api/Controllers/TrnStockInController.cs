@@ -25,8 +25,9 @@ namespace posv2_api.Controllers
                             SupplierId = d.SupplierId,
                             Remarks = d.Remarks,
                             IsReturn = d.IsReturn,
-                            CollectionId = d.CollectionId,
-                            PurchaseOrderId = d.PurchaseOrderId,
+                            CollectionId = d.CollectionId == null ? d.CollectionId : 0,
+                            PurchaseOrderId = d.PurchaseOrderId == null ? d.PurchaseOrderId : 0,
+                            SalesId = d.SalesId == null ? d.SalesId : 0,
                             PreparedBy = d.PreparedBy,
                             CheckedBy = d.CheckedBy,
                             ApprovedBy = d.ApprovedBy,
@@ -107,8 +108,9 @@ namespace posv2_api.Controllers
 
                 return "Success";
             }
-            catch
+            catch (Exception e)
             {
+
                 return "Error";
             }
         }
