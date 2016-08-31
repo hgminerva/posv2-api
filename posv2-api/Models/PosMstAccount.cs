@@ -5,7 +5,7 @@ using System.Web;
 
 namespace posv2_api.Models
 {
-    public class MstAccount
+    public class PosMstAccount
     {
         public Int32 Id { get; set; }
         public String Code { get; set; }
